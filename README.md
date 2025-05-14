@@ -3,12 +3,12 @@
 Official Pytorch implementation of the paper: SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline.
 
 
-<!-- ## TODO
+## TODO
 - [ ] Release model weights
 - [x] Release training code
 - [x] Release inference code
 - [ ] HuggingFace Spaces demo
-- [ ] arxiv paper -->
+- [ ] arxiv paper
 
 
 ## Environment setup
