@@ -1,3 +1,5 @@
+# SoloSpeech
+
 Official Pytorch implementation of the paper: SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline.
 
 
