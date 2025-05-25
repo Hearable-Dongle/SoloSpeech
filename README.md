@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<p align="center">
   <img src="assets/solospeech.png" width="300">
-</div>
+</p>
 <h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline</h3>
 
 <p align="center">
