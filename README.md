@@ -4,7 +4,7 @@
 <h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speech Extraction through a Cascaded Generative Pipeline</h3>
 
 <p align="center">
- <a href="https://arxiv.org/">📜 Paper</a> | <a href="https://wanghelin1997.github.io/SoloSpeech-Demo/">🎶 Demo</a> | <a href="https://huggingface.co/">🤖 Spaces</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
+ <a href="https://arxiv.org/">📜 Paper</a> | <a href="https://wanghelin1997.github.io/SoloSpeech-Demo/">🎶 Samples</a> | <a href="https://colab.research.google.com/drive/1cEcyp2rFP2DOLY4BLjaKksF48-xXQAdQ?usp=sharing">🤖 Demo</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
 </p>
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=WangHelin1997.SoloSpeech" alt="Visitor Statistics" />
