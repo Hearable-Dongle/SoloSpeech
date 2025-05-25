@@ -22,5 +22,5 @@ setup(
     author='Helin Wang',
     description='SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline',
     url='https://github.com/WangHelin1997/SoloSpeech',
-    python_requires='==3.8.19',
+    python_requires='>=3.8.19',
 )
