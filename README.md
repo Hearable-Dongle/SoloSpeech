@@ -19,7 +19,7 @@
 ## Quick Start
 - [Install and quick use](docs/quick_use.md)
 - [Training](docs/training.md)
-- [Evaluation](docs/README.md)
+- [Evaluation](docs/evaluation.md)
 
 
 ## Contributing
