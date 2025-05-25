@@ -1,86 +1,41 @@
-# SoloSpeech
+<div style="text-align: center;">
+  <img src="assets/solospeech.png" width="300">
+</div>
+<h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline</h3>
 
-Official Pytorch implementation of the paper: SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline.
+<p align="center">
+ <a href="https://arxiv.org/">📜 Paper</a> | <a href="https://">🎶 Demo</a> | <a href="https://huggingface.co/">🤖 Spaces</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
+</p>
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=WangHelin1997.SoloSpeech" alt="Visitor Statistics" />
+  <img src="https://img.shields.io/github/stars/WangHelin1997/SoloSpeech?style=social" alt="GitHub Stars" />
+  <img alt="Static Badge" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue.svg" />
+</p>
+
+## Introduction
+
+🎸 SoloSpeech is a novel ***cascaded generative pipeline*** that integrates compression, extraction, reconstruction, and correction processes. SoloSpeech achieves state-of-the-art ***intelligibility and quality*** in target speech extraction and speech separation tasks while demonstrating exceptional ***generalization on out-of-domain data***.
+
+## Quick Start
+- [Install and quick use](docs/quick_use.md)
+- [Training](docs/training.md)
+- [Evaluation](docs/README.md)
 
 
-## TODO
-- [ ] Release model weights
-- [x] Release training code
-- [x] Release inference code
-- [ ] HuggingFace Spaces demo
-- [ ] arxiv paper
+## Contributing
 
-
-## Environment setup
-```bash
-conda env create -f env.yml
-conda activate solospeech
+If you find this work useful, please consider contributing to this repo and cite this work:
 ```
-
-## Audio Compressor Training
-
-To train a T-F Audio VAE model, please:
-
-1. Change data path in `stable_audio_vae/configs/vae_data.txt` (any folder contains audio files).
-
-2. Change model config in `stable_audio_vae/configs/stftvae_16k_320x.config`. 
-
-We provide config for training audio files of 16k sampling rate,  please change the settings when you want other sampling rates.
-
-3. Change batch size and training settings in `stable_audio_vae/defaults.ini`.
-
-4. Run:
-
-```bash
-cd stable_audio_vae/
-bash train_bash.sh
-``` 
-
-## Target Extractor Training
-
-To train a targer extractor, please:
-
-1. Prepare audio files following [SpeakerBeam](https://github.com/BUTSpeechFIT/speakerbeam).
-
-2. Prepare latent features:
-
-```bash
-python dataset/extract_vae.py
+@article{
+}
 ```
-
-3. Training:
-```bash
-accelerate launch scripts/solospeech/train-tse.py
-```
-
-## Corrector Training
-
-To train a corrector, please run:
-```bash
-CUDA_VISIBLE_DEVICES=0 python corrector/train-fastgeco.py --gpus 1 --batch_size 16
-```
-
-## Test
-
-To test TSE, please run:
-
-```bash
-python scripts/solospeech/test.py
-```
-
-
-## Evaluate
-
-To calculate the metrics used in the paper, please run:
-
-```bash
-cd metircs/
-python main.py
-```
-
 
 ## License
-
-All datasets, listening samples, source code, pretrained checkpoints, and the evaluation toolkit are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).  
+All listening samples, source code, pretrained checkpoints, and the evaluation toolkit are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).  
 See the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgements
+
+This implementation is based on [SoloAudio](https://github.com/WangHelin1997/SoloAudio), [EzAudio](https://github.com/haidog-yaqub/EzAudio), [DPM-TSE](https://github.com/haidog-yaqub/DPMTSE), and [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools). We appreciate their awesome work.
+
 
