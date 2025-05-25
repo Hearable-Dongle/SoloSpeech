@@ -7,7 +7,6 @@
  <a href="https://arxiv.org/">📜 Paper</a> | <a href="https://wanghelin1997.github.io/SoloSpeech-Demo/">🎶 Samples</a> | <a href="https://colab.research.google.com/drive/1cEcyp2rFP2DOLY4BLjaKksF48-xXQAdQ?usp=sharing">🤖 Demo</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
 </p>
 <p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=WangHelin1997.SoloSpeech" alt="Visitor Statistics" />
   <img src="https://img.shields.io/github/stars/WangHelin1997/SoloSpeech?style=social" alt="GitHub Stars" />
   <img alt="Static Badge" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue.svg" />
 </p>
