@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='solospeech',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        'pytorch-lightning==2.1.0',
+        'torch',
+        'torch-ema',
+        'torch-optimizer',
+        'torch-stoi',
+        'torchaudio',
+        'torchinfo',
+        'torchmetrics',
+        'torchsde',
+        'torchvision',
+        'tornado',
+        'tqdm==4.63.0',
+        'ninja',
+        'matplotlib',
+        'pesq',
+        'wandb',
+        'PySoundFile',
+        'pandas',
+        'diffusers==0.30',
+        'librosa==0.9.2',
+        'stable-audio-tools',
+        'speechbrain'
+    ],
+    author='Helin Wang',
+    description='SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline',
+    url='https://github.com/WangHelin1997/SoloSpeech',
+    python_requires='>=3.9',
+)
