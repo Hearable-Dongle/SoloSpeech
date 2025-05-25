@@ -1,8 +1,8 @@
 import abc
 import torch
 
-from geco import sdes
-from geco.util.registry import Registry
+from solospeech.corrector.geco import sdes
+from solospeech.corrector.geco.util.registry import Registry
 
 
 CorrectorRegistry = Registry("Corrector")
