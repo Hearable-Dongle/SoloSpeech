@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/solospeech.png" width="300">
 </p>
-<h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speaker Extraction through a Cascaded Generative Pipeline</h3>
+<h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speech Extraction through a Cascaded Generative Pipeline</h3>
 
 <p align="center">
  <a href="https://arxiv.org/">📜 Paper</a> | <a href="https://">🎶 Demo</a> | <a href="https://huggingface.co/">🤖 Spaces</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
