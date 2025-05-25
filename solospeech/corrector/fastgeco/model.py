@@ -8,11 +8,11 @@ import torch
 import pytorch_lightning as pl
 from torch_ema import ExponentialMovingAverage
 import torch.nn.functional as F
-from geco import sampling
-from geco.sdes import SDERegistry
-from fastgeco.backbones import BackboneRegistry
-from geco.util.inference import evaluate_model2
-from geco.util.other import pad_spec
+from solospeech.corrector.geco import sampling
+from solospeech.corrector.geco.sdes import SDERegistry
+from solospeech.corrector.fastgeco.backbones import BackboneRegistry
+from solospeech.corrector.geco.util.inference import evaluate_model2
+from solospeech.corrector.geco.util.other import pad_spec
 import numpy as np
 import matplotlib.pyplot as plt
 

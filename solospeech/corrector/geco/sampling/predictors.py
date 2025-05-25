@@ -3,7 +3,7 @@ import abc
 import torch
 import numpy as np
 
-from geco.util.registry import Registry
+from solospeech.corrector.geco.util.registry import Registry
 
 
 PredictorRegistry = Registry("Predictor")

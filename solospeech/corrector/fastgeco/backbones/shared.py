@@ -4,7 +4,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from geco.util.registry import Registry
+from solospeech.corrector.geco.util.registry import Registry
 
 
 BackboneRegistry = Registry("Backbone")
