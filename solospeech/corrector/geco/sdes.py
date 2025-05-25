@@ -8,10 +8,10 @@ import warnings
 import math
 import scipy.special as sc
 import numpy as np
-from geco.util.tensors import batch_broadcast
+from solospeech.corrector.geco.util.tensors import batch_broadcast
 import torch
 
-from geco.util.registry import Registry
+from solospeech.corrector.geco.util.registry import Registry
 
 
 SDERegistry = Registry("SDE")
