@@ -17,7 +17,7 @@
 
 
 <video width="100%" controls>
-  <source src="https://github.com/user-attachments/assets/9b029aea-2800-4ed9-90fc-5c410ef7241b" type="video/mp4">
+  <source src="https://github.com/WangHelin1997/SoloSpeech/blob/main/assets/solospeech-demo.mp4" type="video/mp4">
 </video>
 
 ## Quick Start
