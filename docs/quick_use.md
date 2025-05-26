@@ -13,7 +13,7 @@ conda activate solospeech
 git clone https://github.com/WangHelin1997/SoloSpeech
 cd SoloSpeech/
 pip install -r requirements.txt
-pip install . --use-pep517
+pip install .
 ```
 
 ## Target Speech Extraction
