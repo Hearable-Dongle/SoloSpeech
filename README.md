@@ -16,9 +16,11 @@
 🎸 SoloSpeech is a novel ***cascaded generative pipeline*** that integrates compression, extraction, reconstruction, and correction processes. SoloSpeech achieves state-of-the-art ***intelligibility and quality*** in target speech extraction and speech separation tasks while demonstrating exceptional ***generalization on out-of-domain data***.
 
 
-<video width="100%" controls>
+<!-- <video width="100%" controls>
   <source src="https://github.com/user-attachments/assets/0b27ec4d-1a5b-446d-9ed2-43702d07b5db" type="video/mp4">
-</video>
+</video> -->
+
+[Video](https://github.com/user-attachments/assets/0b27ec4d-1a5b-446d-9ed2-43702d07b5db)
 
 ## Quick Start
 - [Install and quick use](docs/quick_use.md)
