@@ -48,4 +48,5 @@ See the [LICENSE](./LICENSE) file for details.
 
 This implementation is based on [SoloAudio](https://github.com/WangHelin1997/SoloAudio), [EzAudio](https://github.com/haidog-yaqub/EzAudio), [DPM-TSE](https://github.com/haidog-yaqub/DPMTSE), and [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools). We appreciate their awesome work.
 
-
+## 🌟 Like This Project?
+If you find this repo helpful or interesting, consider dropping a ⭐ — it really helps and means a lot!
