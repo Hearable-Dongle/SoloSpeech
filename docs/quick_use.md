@@ -24,3 +24,7 @@ python scripts/test.py --test-wav "./assets/test2.wav" --enroll-wav "./assets/te
 ```
 Here, `--test-wav` is the path of the mixture audio, `--enroll-wav` is the path of the enrollment audio (representing the speaker you want to extract), and `--output-path` is the path to save output audio.
 
+You can use this setup to run SoloSpeech with less GPU memory, but it may come with a trade-off in performance:
+```bash
+python scripts/fast_test.py --test-wav "./assets/test2.wav" --enroll-wav "./assets/test2_enroll.wav" --output-path "./demo/test2_solospeech.wav"
+```
