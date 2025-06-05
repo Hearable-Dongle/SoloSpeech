@@ -4,9 +4,14 @@
 <img src="assets/solospeech.jpg">
 <h3  align="center">🎸 SoloSpeech: Enhancing Intelligibility and Quality in Target Speech Extraction through a Cascaded Generative Pipeline</h3>
 
-<p align="center">
- <a href="https://arxiv.org/abs/2505.19314">📜 Paper</a> | <a href="https://wanghelin1997.github.io/SoloSpeech-Demo/">🎶 Samples</a> | <a href="https://huggingface.co/spaces/OpenSound/SoloSpeech/">🤖 Spaces</a> | <a href="https://colab.research.google.com/drive/1cEcyp2rFP2DOLY4BLjaKksF48-xXQAdQ?usp=sharing">♠️ Demo</a> | <a href="https://huggingface.co/OpenSound/SoloSpeech-models/">🚀 Models</a>
+<p align="center" style="font-size: 1.1em;">
+  🔗 <a href="https://arxiv.org/abs/2505.19314" target="_blank">Paper</a> &nbsp;|&nbsp;
+  🎧 <a href="https://wanghelin1997.github.io/SoloSpeech-Demo/" target="_blank">Audio Samples</a> &nbsp;|&nbsp;
+  🤖 <a href="https://huggingface.co/spaces/OpenSound/SoloSpeech/" target="_blank">Hugging Face Space</a> &nbsp;|&nbsp;
+  🎬 <a href="https://colab.research.google.com/drive/1cEcyp2rFP2DOLY4BLjaKksF48-xXQAdQ?usp=sharing" target="_blank">Colab Demo</a> &nbsp;|&nbsp;
+  🚀 <a href="https://huggingface.co/OpenSound/SoloSpeech-models/" target="_blank">Models</a>
 </p>
+
 <p align="center">
   <img src="https://img.shields.io/github/stars/WangHelin1997/SoloSpeech?style=social" alt="GitHub Stars" />
   <img alt="Static Badge" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue.svg" />
