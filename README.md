@@ -27,7 +27,7 @@
 
 ## Citations
 
-If you find this work useful, please consider contributing to this repo and cite this work:
+If you find this work useful, please consider contributing to this repo and cite our work:
 ```
 @misc{wang2025solospeechenhancingintelligibilityquality,
       title={SoloSpeech: Enhancing Intelligibility and Quality in Target Speech Extraction through a Cascaded Generative Pipeline}, 
@@ -38,7 +38,8 @@ If you find this work useful, please consider contributing to this repo and cite
       primaryClass={eess.AS},
       url={https://arxiv.org/abs/2505.19314}, 
 }
-
+```
+```
 @inproceedings{wang2025soloaudio,
   title={SoloAudio: Target sound extraction with language-oriented audio diffusion transformer},
   author={Wang, Helin and Hai, Jiarui and Lu, Yen-Ju and Thakkar, Karan and Elhilali, Mounya and Dehak, Najim},
