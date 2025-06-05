@@ -14,7 +14,7 @@
 
 ## Introduction
 
-🎸 SoloSpeech is a novel ***cascaded generative pipeline*** that integrates compression, extraction, reconstruction, and correction processes. SoloSpeech achieves state-of-the-art ***intelligibility and quality*** in target speech extraction and speech separation tasks while demonstrating exceptional ***generalization on out-of-domain data***.
+🎯 SoloSpeech is a novel ***cascaded generative pipeline*** that integrates compression, extraction, reconstruction, and correction processes. SoloSpeech achieves state-of-the-art ***intelligibility and quality*** in target speech extraction and speech separation tasks while demonstrating exceptional ***generalization on out-of-domain data***.
 
 
 [Video](https://github.com/user-attachments/assets/0b27ec4d-1a5b-446d-9ed2-43702d07b5db)
@@ -25,7 +25,7 @@
 - [Evaluation](docs/evaluation.md)
 
 
-## Contributing
+## Citations
 
 If you find this work useful, please consider contributing to this repo and cite this work:
 ```
@@ -37,6 +37,15 @@ If you find this work useful, please consider contributing to this repo and cite
       archivePrefix={arXiv},
       primaryClass={eess.AS},
       url={https://arxiv.org/abs/2505.19314}, 
+}
+
+@inproceedings{wang2025soloaudio,
+  title={SoloAudio: Target sound extraction with language-oriented audio diffusion transformer},
+  author={Wang, Helin and Hai, Jiarui and Lu, Yen-Ju and Thakkar, Karan and Elhilali, Mounya and Dehak, Najim},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
