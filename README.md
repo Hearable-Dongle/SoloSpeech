@@ -29,7 +29,7 @@
 - [Training](docs/training.md)
 - [Evaluation](docs/evaluation.md)
 
-## 📋 Future works
+## Future works
 Based on the valuable comments on the [Issues](https://github.com/WangHelin1997/SoloSpeech/issues) page, we plan to explore the following directions:
 
 - [ ] Improve efficiency
