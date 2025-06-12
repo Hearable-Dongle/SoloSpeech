@@ -29,6 +29,15 @@
 - [Training](docs/training.md)
 - [Evaluation](docs/evaluation.md)
 
+## 📋 Future works
+Based on the valuable comments on the `Issue` page, we plan to explore the following directions:
+
+- [ ] Improve efficiency
+- [ ] Train on more realistic conditions
+- [ ] Train on vocal mixtures in music
+- [ ] Train on mulitple languages
+
+📝 Feel free to add more comments to the `Issue` page. That really helps us to build the next version of SoloSpeech!
 
 ## Citations
 
