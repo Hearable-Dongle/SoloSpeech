@@ -30,14 +30,14 @@
 - [Evaluation](docs/evaluation.md)
 
 ## 📋 Future works
-Based on the valuable comments on the `Issue` page, we plan to explore the following directions:
+Based on the valuable comments on the `Issues` page, we plan to explore the following directions:
 
 - [ ] Improve efficiency
 - [ ] Train on more realistic conditions
 - [ ] Train on vocal mixtures in music
 - [ ] Train on mulitple languages
 
-📝 Feel free to add more comments to the `Issue` page. That really helps us to build the next version of SoloSpeech!
+📝 Feel free to add more comments to the `Issues` page. That really helps us to build the next version of SoloSpeech!
 
 ## Citations
 
