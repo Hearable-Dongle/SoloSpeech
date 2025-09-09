@@ -5,7 +5,7 @@ import soundfile as sf
 import pandas as pd
 import torch
 from tqdm import tqdm
-from vae_modules.autoencoder_wrapper import Autoencoder
+from solospeech.vae_modules.autoencoder_wrapper import Autoencoder
 import glob
 import argparse
 
