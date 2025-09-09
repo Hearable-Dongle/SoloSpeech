@@ -26,13 +26,13 @@ def main(datapath, output_dir):
         step = 0
         for i in tqdm(range(len(audios))):
             audio_id = audios[i].split('/')[-1].split('.wav')[0]
-            audio_clip, sr = librosa.load(audios[i], sr=24000)
-            desired_length = 10 * sr
-            if len(audio_clip) < desired_length:
-                padding = desired_length - len(audio_clip)
-                audio_clip = np.pad(audio_clip, (0, padding), mode='constant')
-            if np.abs(audio_clip).max() > 1:
-                audio_clip /= np.abs(audio_clip).max()
+            audio_clip, sr = librosa.load(audios[i], sr=16000)
+            # desired_length = 10 * sr
+            # if len(audio_clip) < desired_length:
+            #     padding = desired_length - len(audio_clip)
+            #     audio_clip = np.pad(audio_clip, (0, padding), mode='constant')
+            # if np.abs(audio_clip).max() > 1:
+            #     audio_clip /= np.abs(audio_clip).max()
             audio_clip = torch.tensor(audio_clip).unsqueeze(0).to(device)
             audio_clip = autoencoder(audio=audio_clip.unsqueeze(1))
             audio_clip = audio_clip.cpu()[0]
