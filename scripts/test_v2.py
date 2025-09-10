@@ -150,8 +150,8 @@ def main(args):
         mixture_input, std = autoencoder(audio=mixture_input.unsqueeze(1))
         lengths = torch.LongTensor([mixture_input.shape[-1]] * args.num_candidates).to(device)   
         # extractor
-        mixture_input = mixture_input.repeat(8, 1, 1)
-        reference = reference.repeat(8, 1, 1)
+        mixture_input = mixture_input.repeat(args.num_candidates, 1, 1)
+        reference = reference.repeat(args.num_candidates, 1, 1)
         tse_pred = sample_diffusion(tse_model, autoencoder, std, noise_scheduler, device, mixture_input.transpose(2,1), reference.transpose(2,1), lengths, reference_lengths, ddim_steps=args.num_infer_steps, eta=args.eta, seed=args.random_seed)
         ecapatdnn_embedding_pred = ecapatdnn_model.encode_batch(tse_pred).squeeze()
         ecapatdnn_embedding_ref = ecapatdnn_model.encode_batch(torch.tensor(reference_wav)).squeeze()
@@ -208,7 +208,7 @@ if __name__ == '__main__':
     # pre-trained model path
     parser.add_argument('--eta', type=int, default=0)
     parser.add_argument("--num_infer_steps", type=int, default=200)
-    parser.add_argument("--num_candidates", type=int, default=8)
+    parser.add_argument("--num_candidates", type=int, default=4)
     parser.add_argument('--sample-rate', type=int, default=16000)
     # random seed
     parser.add_argument('--random-seed', type=int, default=42, help="Fixed seed")
