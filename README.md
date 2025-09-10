@@ -32,7 +32,8 @@
 ## Future works
 Based on the valuable comments on the [Issues](https://github.com/WangHelin1997/SoloSpeech/issues) page, we plan to explore the following directions:
 
-- [ ] Improve efficiency
+- [x] Improve efficiency
+- [x] Add reranking
 - [ ] Train on more realistic conditions
 - [ ] Train on vocal mixtures in music
 - [ ] Train on mulitple languages
