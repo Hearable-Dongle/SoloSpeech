@@ -153,11 +153,14 @@ def main(args):
         mixture_input = mixture_input.repeat(args.num_candidates, 1, 1)
         reference = reference.repeat(args.num_candidates, 1, 1)
         tse_pred = sample_diffusion(tse_model, autoencoder, std, noise_scheduler, device, mixture_input.transpose(2,1), reference.transpose(2,1), lengths, reference_lengths, ddim_steps=args.num_infer_steps, eta=args.eta, seed=args.random_seed)
-        ecapatdnn_embedding_pred = ecapatdnn_model.encode_batch(tse_pred).squeeze()
-        ecapatdnn_embedding_ref = ecapatdnn_model.encode_batch(torch.tensor(reference_wav)).squeeze()
-        cos_sims = F.cosine_similarity(ecapatdnn_embedding_pred, ecapatdnn_embedding_ref.unsqueeze(0), dim=1)
-        _, max_idx = torch.max(cos_sims, dim=0)
-        pred = tse_pred[max_idx].unsqueeze(0)
+        if args.num_candidates > 1:
+            ecapatdnn_embedding_pred = ecapatdnn_model.encode_batch(tse_pred).squeeze()
+            ecapatdnn_embedding_ref = ecapatdnn_model.encode_batch(torch.tensor(reference_wav)).squeeze()
+            cos_sims = F.cosine_similarity(ecapatdnn_embedding_pred, ecapatdnn_embedding_ref.unsqueeze(0), dim=1)
+            _, max_idx = torch.max(cos_sims, dim=0)
+            pred = tse_pred[max_idx].unsqueeze(0)
+        else:
+            pred = tse_pred
         
         # corrector
         min_leng = min(pred.shape[-1], mixture_wav.shape[-1])
