@@ -113,7 +113,7 @@ def main(args):
         args.tse_config['diffwrap']['UDiT'],
         args.tse_config['diffwrap']['ViT'],
     ).to(device)
-    tse_model.load_state_dict(torch.load(args.tse_ckpt)['model'])
+    tse_model.load_state_dict(torch.load(args.tse_ckpt, map_location="cpu")['model'])
     tse_model.eval()
     # load corrector
     geco_model = ScoreModel.load_from_checkpoint(
@@ -121,7 +121,7 @@ def main(args):
         batch_size=1, num_workers=0, kwargs=dict(gpu=False)
     )
     geco_model.eval(no_ema=False)
-    geco_model.cuda()
+    # geco_model.cuda()
     # load sid model
     ecapatdnn_model = Encoder.from_hparams(source="yangwang825/ecapa-tdnn-vox2")
     # load diffusion tools
